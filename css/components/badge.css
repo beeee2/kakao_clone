@@ -1,0 +1,13 @@
+.badge {
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  /* 혹은 15px */
+  display: flex;
+  /* span은 inline요소이나 넓이와 높이를 가지기 위해서 flex 속성을 이용한다. */
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}

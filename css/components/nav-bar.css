@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* fixed 이용시 width가 사라진다. 이럴 때는 width:100%를 준다. */
+  background-color: #f9f9f9;
+  padding: 20px 50px;
+  /* padding 값에 의해 가장 오른쪽에 있는 아이콘이 화면 밖으로 밀려나간다면
+  box-sizing:border-box 속성을 이용한다. */
+  box-sizing: border-box;
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__link {
+  color: #2e363e;
+  position: relative;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(180deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+.nav__notification {
+  position: absolute;
+  /* position absolute는 가장 가까운 relative 부모에 영향을 받는다. */
+  left: 15px;
+  bottom: 15px;
+  animation: notificationAnimation 2.5s ease-in-out infinite;
+}
+
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+.nav__btn {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: appearBtnAnimation 0.5s ease-in-out forwards;
+}
+.nav__btn:nth-of-type(2) {
+  animation-delay: 0.3s;
+}
+.nav__btn:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+.nav__btn:nth-of-type(4) {
+  animation-delay: 0.9s;
+}

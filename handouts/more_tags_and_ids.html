@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Tags and IDs</title>
+</head>
+<body>
+    <form>
+        <label for="Profile">
+            Profile Photo
+        </label>
+        <input id="Profile" type="file"/><br/>
+
+        <label for="firsr-name">First Name</label>
+        <input id="firsr-name" required placeholder="Name" type="text"/><br/>
+
+        <label for="website">Website</label>
+        <input id="website" type="url"/><br/>
+        
+        <label for="email">Email</label>
+        <input id="email" type="email"/><br/>
+
+        <label for="range">Range</label>
+        <input id="range" type="range"/><br/>
+        <label for="date">Date</label>
+        <input id="date" type="date"/>
+    </form>
+
+    <!-- 
+        label 태그 
+            : question을 추가할 수 있다.
+            : label은 input과 함께여야 작동된다.
+                - label에 for이라는 속성을, input에 id 속성을 사용한다.
+                - for과 id에 들어가는 속성 값이 동일해야 한다.
+                - label의 내용을 누르면 for과 같은 값을 가진 id를 들고 있는 input을 작동시킨다.
+                
+        input 태그
+            type="url"
+            type="email"
+                둘 다 해당 양식을 입력하도록 한다.  
+            type="range"   
+            type="date" 
+                
+       cf. 두군데를 동시입력하려면 alt키를 누른상태로 마우스 커서로 클릭하면 된다.     
+     -->
+</body>
+</html>

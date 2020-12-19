@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media_Queries_Recap</title>
+    <style>
+        div{
+            background-color: teal;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 10px;
+            font-size: large;
+            font-weight: bold;
+            line-height: 200px;
+            text-align: center;
+        }
+        @media screen and (min-width: 601px) and (max-width: 1200px) {
+            /* media type으로 screen을 사용 */
+            .box1 {
+                background-color: wheat;
+            }
+        }
+        @media screen and (orientation: landscape) {
+            .box2 {
+                background-color: wheat;
+                /* 값으로 landscape(가로모드) 또는 portrait(세로모드)가 있다. */
+            }
+        }
+        @media screen and (min-device-width: 601px) and (max-device-width: 1200px) {
+            .box1 {
+                background-color: wheat;
+            /* min-device-width는 오직 핸드폰에서만 적용된다. */
+            }
+        }
+        @media print {
+            body{
+                background-color: tan;
+                /* 해당 브라우저를 인쇄하려고 하면 적용한 색상이 보인다.*/
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">화면 크기</div>
+    <div class="box2">가로모드, 세로모드</div>
+    <div class="box3">핸드폰 전용</div>
+    <!-- Media query
+    : 조건이 참이라면 해당 요소의 CSS를 실행한다.
+    : 익스플로러에서는 실행되지 않는다.
+ -->
+</body>
+</html>

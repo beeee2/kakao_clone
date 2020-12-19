@@ -1,0 +1,13 @@
+.red-dot {
+  color: tomato;
+  position: absolute;
+  right: -8px;
+  bottom: 23px;
+}
+.red-dot--xs {
+  color: tomato;
+  font-size: 5px;
+  position: absolute;
+  right: -10px;
+  bottom: 18px;
+}

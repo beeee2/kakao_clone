@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tags</title>
+</head>
+<body>
+    <form>
+        <input type="color"/>
+        <input type="password"/><br/>
+
+        <input required placeholder="Name" type="text"/>
+        <input  required placeholder="Last Name"  type="text"/>
+        <input required  placeholder="User Name" type="text"/>
+        <input required minlength="10" placeholder="password"  type="password"/>
+        <input type="submit" value="Create Account"/><br/>
+
+        <input type="file" accept=".pdf"/>
+    </form>
+    <!-- form 태그 안에 필요한 양식을 갖추도록 한다.
+        양식 중 제일 중요한 태그는 input태그이다. 
+
+        input : self-closing 태그 
+        input의 속성들
+            - color : 색상을 선택할 수 있다.
+            - password 
+            - placehorder 
+            - submit : 해당 버튼을 누르면 form 내용을 어디론가 보낸다.
+                    : value 속성과 함께 버튼의 내용을 바꿀 수 있다.
+            - disabled : 해당 input 요소를 클릭할 수 없다. 
+            - required : form을 validation할 수 있다.
+            - minlength : 최소글자가 해당 값 이상이어야 한다.
+            - type="file" : 업로드할 파일을 선택할 수 있다. 
+                        : accept라는 속성을 사용하여 특정 file의 유형들만 선택하게끔한다
+                        : ex) accept=".pdf" accpet=".png" accept="images/*" accept=".png, .pdf"
+    -->
+</body>
+</html>
