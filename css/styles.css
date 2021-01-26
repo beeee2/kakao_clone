@@ -28,3 +28,7 @@ body {
 .main-screen {
   padding: 0px var(--horiziontal-space);
 }
+
+input[type="submit"] {
+  -webkit-appearance: none;
+}
